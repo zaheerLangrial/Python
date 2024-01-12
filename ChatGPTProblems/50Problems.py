@@ -130,18 +130,96 @@ print(FindIntersection([1,2,3] , [2,3,4]))
 # Implement a function to check if a number is even or odd.
                 # Done
 # Write a program to find the LCM (Least Common Multiple) of two numbers.
+
+def LCMFinder (num1 , num2) :
+    return (num1 * num2) // math.gcd(num1 , num2)
+
+print(LCMFinder(5 , 10))
+
 # Create a function to remove duplicates from a list.
+
+def DuplicateRemover (list1) : 
+    return list(set(list1))
+
+print(DuplicateRemover([1,2,3,2,2,3,4,]))
+
 # Implement a basic file handling program to read and write to a text file.
+
+f = open('text.txt' , 'r')
+print(f.read())
+f = open('text.txt' , 'w') 
+f.write('My name is Zaheer Ahmad. Now this file is change by me.')
+f.close()
+f = open('text.txt' , 'r')
+print(f.read())
+
 # Write a Python script to count the occurrences of each word in a given text.
+
+        # Done
+
+
 # Implement a program to check if a number is a perfect square.
+
+def PerfectSqr (num) : 
+    sqrRoot = math.sqrt(num)
+    if num % 2 == 0 :
+        print('Perfect Sqaure')
+    else : 
+        print('Not a Perfect Square')
+PerfectSqr(5)
+
 # Create a function to find the length of the hypotenuse of a right-angled triangle.
+# According to formula 
+
+def Findlength (side1 , side2) : 
+    return int((side1**2 + side2**2)**1/2)
+print(Findlength(10 , 12))
+
 # Write a program to find the sum of all prime numbers up to a given number.
+
+        # Done
+
+
 # Implement a function to check if a word is an anagram of another word.
+
+def anagramChecker (word1 , word2) : 
+    print(sorted(word1.lower()))
+    print(word2.lower())
+    return sorted(word1.lower()) == sorted(word2.lower())
+print(anagramChecker('HEllo' , 'hello'))
+
 # Create a program to calculate the average of a list of numbers.
+
+            # Done
+
+
 # Write a Python script to reverse the order of words in a sentence.
+
+def WordsReverser (sentance) : 
+    strInList = sentance.split()
+    strInList.reverse()
+    print(' '.join(strInList))
+
+WordsReverser('A Quick brown fox for jumper over the lazy dog.')
+
 # Implement a program to find the power of a number using recursion.
+
+num = 5
+base = 2
+
+print(num**base)
+
 # Create a function to rotate elements in a list to the left or right.
+        # XXXXXXXXXXXXXXXXXXX
 # Write a program to check if a given string contains only digits.
+
+def stringChecker (string) :
+    if string.isdigit() : 
+        return 'Yes its true'
+    else : 
+        return 'No its not True'
+print(stringChecker('123'))
+
 # Implement a basic sorting algorithm (e.g., bubble sort, insertion sort).
 # Create a function to convert a decimal number to binary.
 # Write a Python script to generate a simple ASCII art.
